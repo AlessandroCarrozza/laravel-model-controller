@@ -7,6 +7,10 @@
     <title>Home page model-controller</title>
 </head>
 <body>
-    hello universe
+    <h1>My Films List</h1>
+
+    @foreach($movies as $movie)
+    <p>hello universe</p>
+    @endforeach
 </body>
 </html>
