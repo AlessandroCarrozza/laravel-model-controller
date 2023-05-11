@@ -14,12 +14,13 @@
         @foreach($movies as $movie)
         <div class="card col-5 m-3" style="width: 18rem;">
             <div class="card-header">
-                Featured
+            {{$movie->title}}
             </div>
             <ul class="list-group list-group-flush">
-                <li class="list-group-item">An item</li>
-                <li class="list-group-item">A second item</li>
-                <li class="list-group-item">A third item</li>
+                <li class="list-group-item">Titolo originale: {{$movie->original_title}}</li>
+                <li class="list-group-item">Nazionalità: {{$movie->nationality}}</li>
+                <li class="list-group-item">Data: {{$movie->date}}</li>
+                <li class="list-group-item">Voto: {{$movie->vote}}</li>
             </ul>
         </div>
         @endforeach
